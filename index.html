@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <h1 class="level-title" id="start-title">Press A Keyboard Key to Start</h1>
+  <h1 class="level-title invisible" id="current-level">Level 1</h1>
+  <h1 class="level-title game-over-title invisible">GAME OVER!</h1>
+  <h2 class="game-over-title invisible">Press A Keyboard Key to Play Again</h2>
+  <div class="container-sm">
+    <div class="row">
+      <div type="button" id="green" class="bttn green">
+      </div>
+      <div type="button" id="red" class="bttn red">
+      </div>
+    </div>
+    <div class="row">
+      <div type="button" id="yellow" class="bttn yellow">
+      </div>
+      <div type="button" id="blue" class="bttn blue">
+      </div>
+      <div id="inner-circle">SIMON</div>
+    </div>
+  </div>
+
+
+  <!-- jQuery from Google Developers -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!-- External JS Scripts -->
+  <script src="script/game.js"></script>
+
+</body>
+
+</html>
