@@ -5,7 +5,8 @@ var playerPattern = [];
 var gameLevel = 1;
 var isGameOver = false;
 
-$(document).one("keydown", readyNewGame);
+// $(document).one("keydown", readyNewGame);
+$("#inner-circle").one("click",readyNewGame);
 
 //Set up array constant that holds the 4 button colors
 const buttonColors = ["green", "red", "yellow", "blue"];
@@ -69,10 +70,10 @@ function readyNewGame() {
     gamePattern = [];
     playerPattern = [];
     gameLevel = 1;
-
-    $(document).one("keypress", function () {
-        gamePlay(gameLevel, evalLevelSuccess);
-    });
+    gamePlay(gameLevel, evalLevelSuccess);
+    // $(document).one("keypress", function () {
+    //     gamePlay(gameLevel, evalLevelSuccess);
+    // });
 }
 
 //Many features on the page change, and sound is played when wrong answer is color sequence is chosen. Also invoked when user takes longer than 60 seconds to respond
@@ -99,7 +100,7 @@ $(".bttn").on("click", (event) => {
 
 //This is a callback function for the main gamePlay() function. Created as callback so that it is only invoked once the player has completed the correct array sequence, chooses a wrong answer, or takes more than 60 seconds to respond
 function evalLevelSuccess() {
-    isGameOver ? $(document).one("keydown", readyNewGame) : setTimeout(readyNextLevel, 1000);
+    isGameOver ? $("#inner-circle").one("click",readyNewGame)/*$(document).one("keydown", readyNewGame)*/ : setTimeout(readyNextLevel, 1000);
 }
 
 //Game Play function - main game code || Second parameter is callback function evalLevelSuccess(). Invoked by readyNewGame() and readyNextLevel()
@@ -135,6 +136,7 @@ function gamePlay(thisLevel, evalNextMove) {
         }, 500);
     } else {
         $("#current-level").addClass("invisible");
-        $(document).one("keydown", readyNewGame);
+        // $(document).one("keydown", readyNewGame);
+        $("#inner-circle").one("click",readyNewGame);
     }
 }
