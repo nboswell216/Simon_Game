@@ -6,7 +6,7 @@ body {
 .level-title,
 h2 {
   font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 5% 5% 7rem;
   color: #FEF2BF;
 }
@@ -16,7 +16,7 @@ h2 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-top: 0;
   margin-bottom: 4rem !important;
 }
@@ -42,17 +42,17 @@ h2 {
   background-color: #000;
   margin: -5px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 350px;
+  width: 350px;
   border: 10px solid black;
 }
 
 #inner-circle {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 5.5rem;
+  font-weight: bolder;
   position: absolute;
-  height: 216px;
-  width: 216px;
+  height: 400px;
+  width: 400px;
   background-color: #fff;
   border: 10px solid #000;
   border-radius: 100%;
