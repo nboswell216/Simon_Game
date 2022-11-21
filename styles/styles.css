@@ -7,7 +7,7 @@ body {
 h2 {
   font-family: 'Press Start 2P', cursive;
   font-size: 4rem;
-  margin: 5% 5% 7rem;
+  margin: 5% 5% 5rem;
   color: #FEF2BF;
 }
 
@@ -42,17 +42,17 @@ h2 {
   background-color: #000;
   margin: -5px;
   display: inline-block;
-  height: 350px;
-  width: 350px;
+  height: 250px;
+  width: 250px;
   border: 10px solid black;
 }
 
 #inner-circle {
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   font-weight: bolder;
   position: absolute;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   background-color: #fff;
   border: 10px solid #000;
   border-radius: 100%;
