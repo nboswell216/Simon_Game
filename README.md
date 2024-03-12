@@ -36,12 +36,12 @@ Designed for Learning\
 
 ### This project was created with a focus on helping developers practice intermediate frontend development concepts. Key areas of practice include:
 
-DOM Manipulation: Modifying page elements in response to game events.
-Event Handling: Clicks, sound playback, and game logic flow.
+DOM Manipulation: Modifying page elements in response to game events.\
+Event Handling: Clicks, sound playback, and game logic flow.\
 Basic Game Logic: Pattern creation, win/loss conditions, and scorekeeping.
-Contributions
 
-### While this project is primarily focused on learning, if you'd like to suggest improvements or fixes, feel free to open a pull request.
+## Contributions
+While this project is primarily focused on learning, if you'd like to suggest improvements or fixes, feel free to open a pull request.
 
 ## License
 
